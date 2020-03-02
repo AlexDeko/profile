@@ -5,6 +5,6 @@ class Profile(private val id: Long,
               private val status: String,
               private val avatar: Long
 ) {
-    var fullname: String = "$name $surname"
-        get
+    val fullname: String
+        get() = "$name $surname"
 }
